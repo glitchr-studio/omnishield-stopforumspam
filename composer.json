@@ -1,0 +1,45 @@
+{
+    "name": "omniguard/stopforumspam",
+    "type": "library",
+    "description": "Omniguard StopForumSpam: are this IP address, this e-mail (sent hashed), this name reported for abuse - the public database's frequency, confidence and last sighting, a threshold of the site's; reports with an API key.",
+    "keywords": [
+        "spam",
+        "antispam",
+        "stopforumspam",
+        "reputation",
+        "blocklist",
+        "omniguard"
+    ],
+    "homepage": "https://github.com/glitchr-studio/omniguard-stopforumspam",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omniguard": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omniguard\\Stopforumspam\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omniguard\\Stopforumspam\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
