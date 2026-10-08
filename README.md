@@ -33,4 +33,4 @@ Reporting a spammer back takes an API key of StopForumSpam's: `$list->report($id
 [Documentation](docs/index.md): the options, the answer and how it is read, the terms, what was
 verified - lookups on the documentation's values and a Tor exit node, for real, on 2026-10-07.
 
-License: LGPL-3.0-or-later.
+License: MIT since 2026-10-09; earlier versions remain published under LGPL-3.0-or-later.
