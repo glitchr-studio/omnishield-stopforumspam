@@ -1,13 +1,13 @@
-# omniguard/stopforumspam
+# omnishield/stopforumspam
 
-**StopForumSpam** for [glitchr/omniguard](https://github.com/glitchr-studio/omniguard): are this IP
+**StopForumSpam** for [glitchr/omnishield](https://github.com/glitchr-studio/omnishield): are this IP
 address, this e-mail, this name reported for abuse. One question to the public database - no key
 needed - and an answer the site reads at its own threshold: how often, how surely, how recently,
 and which part matched; a Tor exit node said so.
 
 ```php
-use Omniguard\Model\Identity;
-use Omniguard\Stopforumspam\StopforumspamGatewayFactory;
+use Omnishield\Model\Identity;
+use Omnishield\Stopforumspam\StopforumspamGatewayFactory;
 
 $list = (new StopforumspamGatewayFactory($httpClient))->create(['threshold' => 50]);
 
@@ -16,7 +16,7 @@ $reputation->known;            // true for 185.220.101.1 on 2026-10-07: confiden
 ```
 
 ```yaml
-omniguard:
+omnishield:
     gateways:
         reported:
             factory: stopforumspam
@@ -34,3 +34,5 @@ Reporting a spammer back takes an API key of StopForumSpam's: `$list->report($id
 verified - lookups on the documentation's values and a Tor exit node, for real, on 2026-10-07.
 
 License: MIT since 2026-10-09; earlier versions remain published under LGPL-3.0-or-later.
+
+Formerly `omniguard/stopforumspam`, renamed on 2026-10-10 with its family (`glitchr/omnishield`).

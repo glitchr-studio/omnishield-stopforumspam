@@ -1,15 +1,15 @@
 <?php
 
-namespace Omniguard\Stopforumspam;
+namespace Omnishield\Stopforumspam;
 
-use Omniguard\Exception\InvalidConfigException;
-use Omniguard\Exception\NotSupportedException;
-use Omniguard\Exception\ProviderException;
-use Omniguard\Http\Answer;
-use Omniguard\Model\Capabilities;
-use Omniguard\Model\Identity;
-use Omniguard\Model\Reputation;
-use Omniguard\ReputationInterface;
+use Omnishield\Exception\InvalidConfigException;
+use Omnishield\Exception\NotSupportedException;
+use Omnishield\Exception\ProviderException;
+use Omnishield\Http\Answer;
+use Omnishield\Model\Capabilities;
+use Omnishield\Model\Identity;
+use Omnishield\Model\Reputation;
+use Omnishield\ReputationInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**

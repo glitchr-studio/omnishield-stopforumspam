@@ -1,17 +1,17 @@
 ---
-title: omniguard/stopforumspam
+title: omnishield/stopforumspam
 order: 1
 ---
 
-# omniguard/stopforumspam
+# omnishield/stopforumspam
 
 ## Installation
 
 ```sh
-composer require omniguard/stopforumspam
+composer require omnishield/stopforumspam
 ```
 
-PHP 8.2 or later, `glitchr/omniguard` and `symfony/http-client` (give the factory your
+PHP 8.2 or later, `glitchr/omnishield` and `symfony/http-client` (give the factory your
 application's client, a `MockHttpClient` in a test). No key to look up; one to report.
 
 ## The sources

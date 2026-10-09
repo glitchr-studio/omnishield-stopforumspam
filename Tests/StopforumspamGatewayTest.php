@@ -1,15 +1,15 @@
 <?php
 
-namespace Omniguard\Stopforumspam\Tests;
+namespace Omnishield\Stopforumspam\Tests;
 
-use Omniguard\Exception\InvalidConfigException;
-use Omniguard\Exception\NotSupportedException;
-use Omniguard\Exception\ProviderException;
-use Omniguard\Exception\UnreachableException;
-use Omniguard\Model\Identity;
-use Omniguard\Model\Reputation;
-use Omniguard\Stopforumspam\StopforumspamGateway;
-use Omniguard\Stopforumspam\StopforumspamGatewayFactory;
+use Omnishield\Exception\InvalidConfigException;
+use Omnishield\Exception\NotSupportedException;
+use Omnishield\Exception\ProviderException;
+use Omnishield\Exception\UnreachableException;
+use Omnishield\Model\Identity;
+use Omnishield\Model\Reputation;
+use Omnishield\Stopforumspam\StopforumspamGateway;
+use Omnishield\Stopforumspam\StopforumspamGatewayFactory;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;

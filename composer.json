@@ -1,16 +1,16 @@
 {
-    "name": "omniguard/stopforumspam",
+    "name": "omnishield/stopforumspam",
     "type": "library",
-    "description": "Omniguard StopForumSpam: are this IP address, this e-mail (sent hashed), this name reported for abuse - the public database's frequency, confidence and last sighting, a threshold of the site's; reports with an API key.",
+    "description": "Omnishield StopForumSpam: are this IP address, this e-mail (sent hashed), this name reported for abuse - the public database's frequency, confidence and last sighting, a threshold of the site's; reports with an API key.",
     "keywords": [
         "spam",
         "antispam",
         "stopforumspam",
         "reputation",
         "blocklist",
-        "omniguard"
+        "omnishield"
     ],
-    "homepage": "https://github.com/glitchr-studio/omniguard-stopforumspam",
+    "homepage": "https://github.com/glitchr-studio/omnishield-stopforumspam",
     "license": "MIT",
     "authors": [
         {
@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "glitchr/omniguard": "^1.0@dev",
+        "glitchr/omnishield": "^1.0@dev",
         "symfony/http-client": "^6.4|^7.0|^8.0"
     },
     "require-dev": {
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Omniguard\\Stopforumspam\\": ""
+            "Omnishield\\Stopforumspam\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
@@ -36,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Omniguard\\Stopforumspam\\Tests\\": "Tests/"
+            "Omnishield\\Stopforumspam\\Tests\\": "Tests/"
         }
     },
     "config": {

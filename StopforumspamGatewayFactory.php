@@ -1,11 +1,11 @@
 <?php
 
-namespace Omniguard\Stopforumspam;
+namespace Omnishield\Stopforumspam;
 
-use Omniguard\Config;
-use Omniguard\Exception\InvalidConfigException;
-use Omniguard\GatewayFactory;
-use Omniguard\GatewayInterface;
+use Omnishield\Config;
+use Omnishield\Exception\InvalidConfigException;
+use Omnishield\GatewayFactory;
+use Omnishield\GatewayInterface;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
@@ -39,9 +39,9 @@ final class StopforumspamGatewayFactory extends GatewayFactory
     protected function populate(Config $c): void
     {
         $c->defaults([
-            'omniguard.factory_name' => 'stopforumspam',
-            'omniguard.factory_title' => 'StopForumSpam',
-            'omniguard.required_options' => [],
+            'omnishield.factory_name' => 'stopforumspam',
+            'omnishield.factory_title' => 'StopForumSpam',
+            'omnishield.required_options' => [],
             'threshold' => 50,
             'send' => ['ip', 'email', 'name'],
             'hash_email' => true,
